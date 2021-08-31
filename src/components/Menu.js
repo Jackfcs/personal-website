@@ -3,18 +3,32 @@ import Toggle from "./Toggler";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 62.2vw;
-  height: 100%;
-  vertical-align: middle;
+  width: 100vw;
+  height: 10.25vw;
   max-height: 60px;
-  position: absolute;
-  right: 5vw;
-  display: flex;
-  align-items: center;
-  top: 0vw;
+  position: relative;
+  margin-bottom: 3.9vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: ${({ theme }) => theme.body};
+  z-index; 999;
+`
+
+const ULContainer = styled.div`
+width: 60.2vw;
+height: 100%;
+vertical-align: middle;
+max-height: 60px;
+position: absolute;
+right: 8vw;
+display: flex;
+align-items: center;
 `
 
 const Ul = styled.ul`
+width: 60vw;
 list-style-type: none;
 display: flex;
 height: 2vw;
@@ -22,6 +36,7 @@ width: inherit;
 justify-content: space-between;
 align-content: center;
 align-items: middle;
+
 `
 
 const A = styled.a`
@@ -46,6 +61,7 @@ const Menu = (props) => {
     return (
         
             <Container>
+                <ULContainer>
             <Ul>
             
                 <li><A>Home</A></li>
@@ -58,6 +74,7 @@ const Menu = (props) => {
                 
              
             </Ul>
+            </ULContainer>
            </Container>
         
     )

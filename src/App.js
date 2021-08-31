@@ -7,9 +7,11 @@ import "./App.scss";
 import Main from "./components/Main";
 import Menu from "./components/Menu";
 import About from "./components/About";
+import Skills from "./components/Skills"
 
 //Things to return to
 // scroll-snap
+// responsive, add mobile detect
 
 function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
@@ -27,6 +29,7 @@ function App() {
 
         <Main />
         <About />
+        <Skills />
 
       </div>
     </ThemeProvider>
