@@ -1,10 +1,33 @@
-import React from 'react'
+import React from 'react';
+import styled from "styled-components";
 
-function Main() {
+const Container = styled.div`
+    position: relative;
+    font-family: 'Volkhov', serif;
+    max-width: 100%;
+    margin-top: 14vw;
+    margin-bottom: 7.8vw;
+`
+
+const Name = styled.h1`
+    font-size: 9vw;
+    text-align: left;
+    line-height: 1;
+`
+
+const Title = styled.h3`
+    font-size: 4vw;
+    font-family: 'Volkhov', serif;
+    margin-top: 2vw;
+`
+
+const Main = () => {
     return (
-        <div>
-            <h1>Jack Campbell-Smith</h1>
-        </div>
+            <Container>
+                <Name>Jack</Name>
+                <Name>Campbell-Smith</Name>
+                <Title>frontend developer</Title>
+            </Container>
     )
 }
 
