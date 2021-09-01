@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import react from "../icons/frontend/react.png";
 import { frontEnd, misc } from "./Images";
 
 const SkillsComponent = styled.div`
 margin-top: 8vw;
 margin-bottom: 8vw;
+scroll-margin-top: 14vw;
 `;
 
 const SectionTitle = styled.h2`
@@ -43,7 +43,8 @@ const Image = styled.img`
   transition: bottom 0.2s;
   padding: 0.5vw;
   &:hover {
-    bottom: 20px;
+    //bottom: 20px;
+    transform: scale(1.2) translateY(-20px)
   }
   
   `;
@@ -59,7 +60,7 @@ const Skills = () => {
   return (
     <div>
       
-      <SkillsComponent>
+      <SkillsComponent id="skills">
           <SectionTitle>Skills</SectionTitle>
           <AreaTitle>frontend</AreaTitle>
         <SkillsContainer>{frontEndImages}</SkillsContainer>

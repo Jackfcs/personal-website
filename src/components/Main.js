@@ -7,6 +7,7 @@ const Container = styled.div`
     max-width: 100%;
     margin-top: 14vw;
     margin-bottom: 7.8vw;
+    scroll-margin-top: 14vw;
 `
 
 const Name = styled.h1`
@@ -23,7 +24,7 @@ const Title = styled.h3`
 
 const Main = () => {
     return (
-            <Container>
+            <Container id="home">
                 <Name>Jack</Name>
                 <Name>Campbell-Smith</Name>
                 <Title>frontend developer</Title>

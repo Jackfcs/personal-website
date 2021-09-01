@@ -45,6 +45,10 @@ const A = styled.a`
   text-decoration: none;
   height: 2vw;
   display: block;
+  color: ${({ theme }) => theme.text};
+  &:hover{
+      text-decoration: underline;
+  }
 `
 
 
@@ -64,12 +68,12 @@ const Menu = (props) => {
                 <ULContainer>
             <Ul>
             
-                <li><A>Home</A></li>
-                <li><A>About</A></li>
-                <li><A>Skills</A></li>
+                <li><A href='#home'>Home</A></li>
+                <li><A href='#about'>About</A></li>
+                <li><A href='#skills'>Skills</A></li>
                 <li><A>Projects</A></li>
                 <li><A>Contact</A></li>
-                <li><A>Mode</A></li>
+                <li>Mode</li>
                 <NewToggle theme={props.theme} toggleTheme={props.toggleTheme} ></NewToggle>
                 
              

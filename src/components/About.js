@@ -7,6 +7,7 @@ const Container = styled.div`
   justify-content: space-between;
   background: ${({ theme }) => theme.secondaryBG};
   margin-left: 0px;
+  scroll-margin-top: 14vw;
 `;
 
 const SectionTitle = styled.h2`
@@ -22,7 +23,7 @@ const SectionText = styled.p`
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <SectionTitle>About me</SectionTitle>
       <SectionText>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at eros

@@ -7,7 +7,8 @@ import "./App.scss";
 import Main from "./components/Main";
 import Menu from "./components/Menu";
 import About from "./components/About";
-import Skills from "./components/Skills"
+import Skills from "./components/Skills";
+import Projects from "./components/Projects"
 
 //Things to return to
 // scroll-snap
@@ -30,6 +31,7 @@ function App() {
         <Main />
         <About />
         <Skills />
+        <Projects />
 
       </div>
     </ThemeProvider>
