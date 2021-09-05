@@ -8,10 +8,10 @@ import Main from "./components/Main";
 import Menu from "./components/Menu";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects"
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 //Things to return to
-// scroll-snap
 // responsive, add mobile detect
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-
+        <Contact />
       </div>
     </ThemeProvider>
   );

@@ -77,7 +77,7 @@ const Menu = (props) => {
                 <Li><A href='#about'>About</A></Li>
                 <Li><A href='#skills'>Skills</A></Li>
                 <Li><A href='#projects'>Projects</A></Li>
-                <Li><A>Contact</A></Li>
+                <Li><A href='#contact'>Contact</A></Li>
                 <Li>Mode</Li>
                 <NewToggle theme={props.theme} toggleTheme={props.toggleTheme} ></NewToggle>
                 

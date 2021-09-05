@@ -8,6 +8,9 @@ const Container = styled.div`
     margin-top: 14vw;
     margin-bottom: 7.8vw;
     scroll-margin-top: 14vw;
+
+  padding-left: 5.7vw;
+  padding-right: 5.7vw;
 `
 
 const Name = styled.h1`

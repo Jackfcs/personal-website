@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const Button = styled.button`
-background: ${({ theme }) => theme.background};
+background: ${({ theme }) => theme.body};
 border: 2px solid ${({ theme }) => theme.toggleBorder};
 border-radius: 30px;
 cursor: pointer;
@@ -21,7 +21,7 @@ align-items: center;
 `;
 
 const Ball = styled.span`
-    transition: all 0.3s linear
+    transition: all 0.5s linear
     position: absolute
     content: "";
     bottom: 0rem;
@@ -29,7 +29,7 @@ const Ball = styled.span`
     width: 2vw;
     height: 2vw;
     border-radius: 50px;
-    transition: 0.2s;
+    transition: 0.5s;
     background: grey;
     transform: ${prop => prop.isLight ? 'translateX(0)' : 'translateX(3vw)'};
     left: ${prop => prop.isLight ?  'calc(ovw)' : 'calc(1vw)'};

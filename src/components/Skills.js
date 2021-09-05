@@ -3,14 +3,17 @@ import styled from "styled-components";
 import { frontEnd, misc } from "./Images";
 
 const SkillsComponent = styled.div`
-margin-top: 8vw;
-margin-bottom: 8vw;
-scroll-margin-top: 14vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    scroll-margin-top: 14vw;
+
+  padding-left: 5.7vw;
+  padding-right: 5.7vw;
 `;
 
 const SectionTitle = styled.h2`
-margin-bottom: 3.6vw;
-text-align: left;
+    margin-bottom: 3.6vw;
+    text-align: left;
 `;
 
 const SkillsContainer = styled.div`
@@ -40,7 +43,7 @@ const Image = styled.img`
   justify-items: center;
   position: relative;
   bottom: 0;
-  transition: bottom 0.2s;
+  transition: transform 0.2s;
   padding: 0.5vw;
   &:hover {
     //bottom: 20px;
