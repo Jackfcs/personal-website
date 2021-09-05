@@ -39,11 +39,16 @@ align-items: middle;
 
 `
 
+const Li = styled.li`
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2vw;
+    height: 2vw;
+    display: block;
+    color: ${({ theme }) => theme.text};
+`
+
 const A = styled.a`
-  font-family: 'DM Sans', sans-serif;
-  font-size: 2vw;
   text-decoration: none;
-  height: 2vw;
   display: block;
   color: ${({ theme }) => theme.text};
   &:hover{
@@ -68,12 +73,12 @@ const Menu = (props) => {
                 <ULContainer>
             <Ul>
             
-                <li><A href='#home'>Home</A></li>
-                <li><A href='#about'>About</A></li>
-                <li><A href='#skills'>Skills</A></li>
-                <li><A>Projects</A></li>
-                <li><A>Contact</A></li>
-                <li>Mode</li>
+                <Li><A href='#home'>Home</A></Li>
+                <Li><A href='#about'>About</A></Li>
+                <Li><A href='#skills'>Skills</A></Li>
+                <Li><A href='#projects'>Projects</A></Li>
+                <Li><A>Contact</A></Li>
+                <Li>Mode</Li>
                 <NewToggle theme={props.theme} toggleTheme={props.toggleTheme} ></NewToggle>
                 
              

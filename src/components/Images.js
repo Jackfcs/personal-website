@@ -22,7 +22,7 @@ export const frontEnd = [javascript, html5, css3, react, bootstrap, sass];
 
 export const misc = [git, github, npm, webpack, jest];
 
-export const screenShots = [
+export const projectInfo = [
   {
     name: "Battleship",
     image: battleship,
