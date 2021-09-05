@@ -34,14 +34,6 @@ const Ball = styled.span`
     transform: ${prop => prop.isLight ? 'translateX(0)' : 'translateX(3vw)'};
     left: ${prop => prop.isLight ?  'calc(ovw)' : 'calc(1vw)'};
 
-   
-
-    // ${Button}: active & {
-    //     width: 2rem;
-    //     position: relative;
-    //     right: ${prop => prop.isLight ?  '0.5rem': '0.5rem'};
-    // }
-
 `
 const Toggle = ({theme,  toggleTheme, className}) => {
     const isLight = theme === 'dark'

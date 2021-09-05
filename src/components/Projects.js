@@ -12,8 +12,21 @@ const ProjectsComponent = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  margin-bottom: 3.6vw;
-  text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.6vw;
+    text-align: left;
+    &:after{   
+        content: '';
+        position: relative;
+        top: 0.2vw;
+        flex: 1;
+        margin-left: 1rem;
+        height: 0.4vw;
+        margin-right: 50vw;
+        background-color: ${({ theme }) => theme.text};
+        border-radius: 1vw;
+}
 `;
 
 
@@ -31,7 +44,7 @@ const Project = styled.div`
     align-items: center;
     width: 35vw;
     height: auto;
-    background-color: #1a1a1a;
+    background-color: ${({ theme }) => theme.secondaryBG};
     margin-bottom: 5vw;
     border-radius: 2vw;
 `;
@@ -63,15 +76,16 @@ const ButtonContainer = styled.div`
 `
 
 const ProjectLink = styled.a`
-    background-color: brown;
+    background-color: #171717;
     text-align: center;
     padding: 1vw;
     border-radius: 2vw;
-    min-width: 12vw;
-    max-width: 12vw;
+    min-width: 10vw;
+    max-width: 10vw;
     text-decoration: none;
-    color: ${({ theme }) => theme.text};
+    color: white;
     transition: background-color 0.4s;
+    font-size: 1.6vw;
     &:hover {
         background-color: ${({ theme }) => theme.secondaryBG};
     }

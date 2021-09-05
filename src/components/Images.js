@@ -18,9 +18,22 @@ import todo from "../icons/screenshots/todo.png";
 import calculator from "../icons/screenshots/calculator.png";
 import library from "../icons/screenshots/library.png";
 
-export const frontEnd = [javascript, html5, css3, react, bootstrap, sass];
+export const frontEnd = [
+  { image: javascript, name: "JavaScript" },
+  { image: html5, name: "HTML5" },
+  { image: css3, name: "CSS3" },
+  { image: react, name: "React.js" },
+  { image: bootstrap, name: "Bootstrap" },
+  { image: sass, name: "Sass" },
+];
 
-export const misc = [git, github, npm, webpack, jest];
+export const misc = [
+  { image: git, name: "Git" },
+  { image: github, name: "GitHub" },
+  { image: npm, name: "npm" },
+  { image: webpack, name: "Webpack" },
+  { image: jest, name: "Jest" },
+];
 
 export const projectInfo = [
   {
@@ -70,5 +83,5 @@ export const projectInfo = [
     image: library,
     repo: "https://github.com/Jackfcs/book_library",
     live: "https://jackfcs.github.io/book_library/",
-  }
+  },
 ];

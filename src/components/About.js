@@ -5,12 +5,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: ${({ theme }) => theme.secondaryBG};
   margin-left: 0px;
   scroll-margin-top: 14vw;
 
-  padding-left: 5.7vw;
-  padding-right: 5.7vw;
+  
+  padding: 5.7vw
 `;
 
 const SectionTitle = styled.h2`

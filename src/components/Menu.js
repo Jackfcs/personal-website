@@ -41,7 +41,7 @@ align-items: middle;
 
 const Li = styled.li`
     font-family: 'DM Sans', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     height: 2vw;
     display: block;
     color: ${({ theme }) => theme.text};
@@ -51,6 +51,7 @@ const A = styled.a`
   text-decoration: none;
   display: block;
   color: ${({ theme }) => theme.text};
+  font-weight: bold;
   &:hover{
       text-decoration: underline;
   }
@@ -62,6 +63,7 @@ const NewToggle = styled(Toggle)`
         position: relative;
         bottom: .5vw;
         right: 3vw;
+        transform: scale(0.8);
 
     
 `

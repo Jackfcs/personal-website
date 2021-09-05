@@ -3,17 +3,31 @@ import styled from "styled-components";
 import { frontEnd, misc } from "./Images";
 
 const SkillsComponent = styled.div`
-    margin-top: 8vw;
-    margin-bottom: 8vw;
-    scroll-margin-top: 14vw;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  scroll-margin-top: 14vw;
 
-  padding-left: 5.7vw;
-  padding-right: 5.7vw;
+  padding: 5.7vw;
+
+  background: ${({ theme }) => theme.secondaryBG};
 `;
 
 const SectionTitle = styled.h2`
-    margin-bottom: 3.6vw;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.6vw;
+  text-align: left;
+  &:after {
+    content: "";
+    position: relative;
+    top: 0.2vw;
+    flex: 1;
+    margin-left: 1rem;
+    height: 0.4vw;
+    margin-right: 50vw;
+    background-color: ${({ theme }) => theme.text};
+    border-radius: 1vw;
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -26,8 +40,11 @@ const SkillsContainer = styled.div`
 `;
 
 const AreaTitle = styled.p`
-    margin-bottom: 1.25vw;
-`
+  margin-bottom: 1.25vw;
+  font-size: 2vw;
+`;
+
+const ImageContainer = styled.div``;
 
 const Image = styled.img`
   height: auto;
@@ -45,29 +62,50 @@ const Image = styled.img`
   bottom: 0;
   transition: transform 0.2s;
   padding: 0.5vw;
-  &:hover {
-    //bottom: 20px;
-    transform: scale(1.2) translateY(-20px)
+
+  ${ImageContainer}: hover & {
+    transform: scale(1.2) translateY(-0.9vw)
+    
   }
-  
   `;
+
+const Name = styled.p`
+    width: 8vw;
+    text-align: center;
+    transform: scale(0) translateY(-2vw)
+    transition: transform 0.2s;
+    visibility: hidden;
+    ${ImageContainer}: hover & {
+        visibility: visible;
+    }
+    
+`;
 
 const Skills = () => {
   const frontEndImages = frontEnd.map((image, index) => {
-    return <Image src={image} key={index}></Image>;
+    return (
+      <ImageContainer>
+        <Image src={image.image} key={index}></Image>
+        <Name>{image.name}</Name>
+      </ImageContainer>
+    );
   });
   const miscImages = misc.map((image, index) => {
-    return <Image src={image} key={index}></Image>;
+    return (
+      <ImageContainer>
+        <Image src={image.image} key={index}></Image>
+        <Name>{image.name}</Name>
+      </ImageContainer>
+    );
   });
 
   return (
     <div>
-      
       <SkillsComponent id="skills">
-          <SectionTitle>Skills</SectionTitle>
-          <AreaTitle>frontend</AreaTitle>
+        <SectionTitle>Skills</SectionTitle>
+        <AreaTitle>frontend</AreaTitle>
         <SkillsContainer>{frontEndImages}</SkillsContainer>
-        <AreaTitle>misc</AreaTitle>
+        <AreaTitle>other</AreaTitle>
         <SkillsContainer>{miscImages}</SkillsContainer>
       </SkillsComponent>
     </div>

@@ -1,17 +1,17 @@
 export const lightTheme = {
-    body: '#f8b134',
-    secondaryBG: '#c0f3fe',
-    text: '#363537',
+    body: '#c1d6f2',
+    secondaryBG: '#4a6891',
+    text: '#1a1a1a',
     buttonHoverColor: '#a5c8c6',
-    toggleBorder: '#FFF',
+    toggleBorder: '#4a6891',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
   }
   
   export const darkTheme = {
     body: '#363537',
-    secondaryBG: '#251139',
+    secondaryBG: '#ba3b3b',
     text: '#FAFAFA',
     buttonHoverColor: '#c8a5c1',
-    toggleBorder: '#6B8096',
+    toggleBorder: '#ba3b3b',
     gradient: 'linear-gradient(#091236, #1E215D)',
   }
