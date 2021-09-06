@@ -21,8 +21,8 @@ align-items: center;
 `;
 
 const Ball = styled.span`
-    transition: all 0.5s linear
-    position: absolute
+    transition: all 0.5s ease;
+    //position: absolute;
     content: "";
     bottom: 0rem;
     right: 0rem;
@@ -33,6 +33,11 @@ const Ball = styled.span`
     background: grey;
     transform: ${prop => prop.isLight ? 'translateX(0)' : 'translateX(3vw)'};
     left: ${prop => prop.isLight ?  'calc(ovw)' : 'calc(1vw)'};
+
+    @media (max-width: 480px) {
+        width: 1.8vw;
+        height: 1.8vw;
+    }
 
 `
 const Toggle = ({theme,  toggleTheme, className}) => {
