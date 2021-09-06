@@ -110,11 +110,14 @@ const StyledBurgerMenu = styled.div`
   .bm-cross-button {
     height: 15vw;
     width: 15vw;
+    transform: scale(2);
+    
   }
 
   /* Color/shape of close button cross */
   .bm-cross {
     background: ${({ theme }) => theme.secondaryBG};
+    position: relative;
   }
 
   /* General sidebar styles */
@@ -166,6 +169,7 @@ const Menu = (props) => {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
+  
  
 
   return (
