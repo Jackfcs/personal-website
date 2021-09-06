@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Toggle from "./Toggler";
 import styled from "styled-components";
 import { slide as MobMenu } from "react-burger-menu";
@@ -160,6 +160,8 @@ const StyledBurgerMenu = styled.div`
 const Menu = (props) => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
 
+  const [isOpen, setOpen] = useState(false)
+
   const updateMedia = () => {
     setDesktop(window.innerWidth > 480);
   };
@@ -169,7 +171,13 @@ const Menu = (props) => {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
-  
+    const handleIsOpen = () => {
+        setOpen(!isOpen)
+      }
+    
+      const closeSideBar = () => {
+        setOpen(false)
+      }
  
 
   return (
@@ -213,12 +221,12 @@ const Menu = (props) => {
             </Ul>
           </ULContainer>
           <StyledBurgerMenu>
-            <MobMenu right width={"100%"}>
-                <A href="#home">Home</A>
-                <A href="#about">About</A>
-                <A href="#skills">Skills</A>
-                <A href="#projects">Projects</A>
-                <A href="#contact">Contact</A>
+            <MobMenu right width={"100%"}  isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+                <A onClick={closeSideBar} href="#home">Home</A>
+                <A onClick={closeSideBar} href="#about">About</A>
+                <A onClick={closeSideBar} href="#skills">Skills</A>
+                <A onClick={closeSideBar} href="#projects">Projects</A>
+                <A onClick={closeSideBar} href="#contact">Contact</A>
             </MobMenu>
           </StyledBurgerMenu>
         </Container>
