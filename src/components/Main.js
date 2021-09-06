@@ -12,15 +12,12 @@ const Container = styled.div`
 `
 
 const Name = styled.h1`
-    font-size: 8vw;
     text-align: left;
     line-height: 1;
     color: ${({ theme }) => theme.text}
 `
 
 const Title = styled.h3`
-    font-size: 4vw;
-    font-family: 'Volkhov', serif;
     margin-top: 2vw;
     color: ${({ theme }) => theme.secondaryBG}
 `

@@ -1,34 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { projectInfo } from "./Images";
+import {SectionTitle} from "./Skills"
 
 const ProjectsComponent = styled.div`
   margin-top: 8vw;
   margin-bottom: 8vw;
-  scroll-margin-top: 14vw;
+  scroll-margin-top: 8vw;
 
   padding-left: 5.7vw;
   padding-right: 5.7vw;
 `;
-
-const SectionTitle = styled.h2`
-    display: flex;
-    align-items: center;
-    margin-bottom: 4.6vw;
-    text-align: left;
-    &:after{   
-        content: '';
-        position: relative;
-        top: 0.2vw;
-        flex: 1;
-        margin-left: 1rem;
-        height: 0.4vw;
-        margin-right: 50vw;
-        background-color: ${({ theme }) => theme.text};
-        border-radius: 1vw;
-}
-`;
-
 
 
 const ProjectsContainer = styled.div`
@@ -47,6 +29,12 @@ const Project = styled.div`
     background-color: ${({ theme }) => theme.secondaryBG};
     margin-bottom: 5vw;
     border-radius: 2vw;
+
+    @media (max-width: 480px) {
+        width: 80vw;
+        height: 60vw;
+        margin-bottom: 10vw;
+    }
 `;
 
 const Img = styled.img`
@@ -55,6 +43,10 @@ const Img = styled.img`
     object-fit: cover;
     object-position: 50% 0%;
     border-radius: 2vw 2vw 0 0;
+    @media (max-width: 480px) {
+        width: 80vw;
+        height: 32vw;
+    }
 `
 
 const ProjectName = styled.h3`
@@ -62,6 +54,10 @@ const ProjectName = styled.h3`
     margin-bottom: 1vw;
     font-size: 3vw;
     font-family: 'Volkhov', serif;
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
 `
 
 const ProjectDescription = styled.p`
@@ -88,6 +84,14 @@ const ProjectLink = styled.a`
     font-size: 1.6vw;
     &:hover {
         background-color: ${({ theme }) => theme.secondaryBG};
+    }
+
+    @media (max-width: 480px) {
+        min-width: 20vw;
+        max-width: 20vw;
+        padding: 2vw;
+        border-radius: 5vw;
+        font-size: 3vw;
     }
 
 `

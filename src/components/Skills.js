@@ -5,14 +5,14 @@ import { frontEnd, misc } from "./Images";
 const SkillsComponent = styled.div`
   margin-top: 8vw;
   margin-bottom: 8vw;
-  scroll-margin-top: 14vw;
+  scroll-margin-top: 5vw;
 
   padding: 5.7vw;
 
   background: ${({ theme }) => theme.secondaryBG};
 `;
 
-const SectionTitle = styled.h2`
+export const SectionTitle = styled.h2`
   display: flex;
   align-items: center;
   margin-bottom: 3.6vw;
@@ -28,33 +28,53 @@ const SectionTitle = styled.h2`
     background-color: ${({ theme }) => theme.text};
     border-radius: 1vw;
   }
+
+  @media (max-width: 480px) {
+    &:after {
+        margin-right: 30vw;
+    }
+ }
 `;
 
 const SkillsContainer = styled.div`
   position: relative;
-  height: 7.1vw;
   display: flex;
   flex-direction: row;
   margin-bottom: 48px;
   justify-content: flex-start;
+
+  @media (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(3, 20.8vw);
+    grid-column-gap: 12vw;
+    grid-row-gap: 10vw;
+    height: auto;
+    }
 `;
 
 const AreaTitle = styled.p`
   margin-bottom: 1.25vw;
-  font-size: 2vw;
+  @media (max-width: 480px) {
+      font-size: 5vw;
+      margin-bottom: 4vw;
+  }
 `;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
 const Image = styled.img`
   height: auto;
   vertical-align: middle;
-  margin: 0;
   background-color: white;
   border-radius 12px;
-  height: 100%;
+  height: 7vw;
   width: 7vw;
-  margin-right: 2.2vw;
+  margin-right: 1.1vw;
+  margin-left: 1.1vw;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -67,11 +87,20 @@ const Image = styled.img`
     transform: scale(1.2) translateY(-0.9vw)
     
   }
+
+  @media (max-width: 480px) {
+      width: 19vw;
+      height: 19vw;
+      ${ImageContainer}: hover & {
+        transition: none !important;
+        transform: scale(1);
+        
+      }
+  }
+    
   `;
 
 const Name = styled.p`
-    width: 8vw;
-    text-align: center;
     transform: scale(0) translateY(-2vw)
     transition: transform 0.2s;
     visibility: hidden;
@@ -79,21 +108,26 @@ const Name = styled.p`
         visibility: visible;
     }
     
+    @media (max-width: 480px) {
+        margin-top: 1vw;
+        visibility: visible;
+        font-size: 3vw;
+    }
 `;
 
-const Skills = () => {
+export const Skills = () => {
   const frontEndImages = frontEnd.map((image, index) => {
     return (
-      <ImageContainer>
-        <Image src={image.image} key={index}></Image>
+      <ImageContainer key={index}>
+        <Image src={image.image}></Image>
         <Name>{image.name}</Name>
       </ImageContainer>
     );
   });
   const miscImages = misc.map((image, index) => {
     return (
-      <ImageContainer>
-        <Image src={image.image} key={index}></Image>
+      <ImageContainer key={index}>
+        <Image src={image.image}></Image>
         <Name>{image.name}</Name>
       </ImageContainer>
     );
@@ -112,4 +146,5 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+//export Skills;
+//export SectionTitle;

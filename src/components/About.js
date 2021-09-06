@@ -5,15 +5,20 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 0px;
-  scroll-margin-top: 14vw;
+  scroll-margin-top: 8vw;
+  padding: 5.7vw;
 
-  
-  padding: 5.7vw
+  @media (max-width: 480px) {
+      flex-direction: column;
+  }
 `;
 
 const SectionTitle = styled.h2`
   flex: 5;
+
+  @media (max-width: 480px) {
+    flex: 1;
+}
 `;
 
 const SectionText = styled.p`
@@ -21,6 +26,11 @@ const SectionText = styled.p`
   max-width: 100%;
   height: auto;
   flex: 6;
+
+  @media (max-width: 480px) {
+    width: 90vw;
+    flex: 1;
+}
 `;
 
 const About = () => {

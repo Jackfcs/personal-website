@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Toggle from "./Toggler";
 import styled from "styled-components";
 
@@ -69,8 +69,20 @@ const NewToggle = styled(Toggle)`
 `
 
 const Menu = (props) => {
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 480);
+      };
+
+      useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+      });
+
     return (
-        
+        <div>
+        {isDesktop? (
             <Container>
                 <ULContainer>
             <Ul>
@@ -87,7 +99,9 @@ const Menu = (props) => {
             </Ul>
             </ULContainer>
            </Container>
-        
+        ) : (<div></div>
+        )}
+        </div>
     )
 }
 

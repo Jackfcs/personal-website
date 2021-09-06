@@ -7,7 +7,7 @@ import "./App.scss";
 import Main from "./components/Main";
 import Menu from "./components/Menu";
 import About from "./components/About";
-import Skills from "./components/Skills";
+import { Skills } from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
