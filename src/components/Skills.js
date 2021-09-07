@@ -107,11 +107,15 @@ const Name = styled.p`
     ${ImageContainer}: hover & {
         visibility: visible;
     }
+    position: absolute;
+    top: 8vw;
     
     @media (max-width: 480px) {
         margin-top: 1vw;
         visibility: visible;
         font-size: 3vw;
+        position: static;
+        text-align: center;
     }
 `;
 

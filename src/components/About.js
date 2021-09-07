@@ -9,7 +9,7 @@ const Container = styled.div`
   padding: 5.7vw;
 
   @media (max-width: 480px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 `;
 
@@ -18,19 +18,21 @@ const SectionTitle = styled.h2`
 
   @media (max-width: 480px) {
     flex: 1;
-}
+  }
 `;
 
 const SectionText = styled.p`
   width: 45vw;
   max-width: 100%;
   height: auto;
-  flex: 6;
+  flex: 8;
+  font-size: 2vw;
 
   @media (max-width: 480px) {
     width: 90vw;
     flex: 1;
-}
+    font-size: 4vw;
+  }
 `;
 
 const About = () => {
@@ -38,36 +40,30 @@ const About = () => {
     <Container id="about">
       <SectionTitle>About me</SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at eros
-        orci. Sed volutpat nisi eget sodales auctor. Praesent id massa at purus
-        semper pellentesque. Vestibulum ac quam leo. Ut lacinia lorem at sapien
-        faucibus, a tempor ex hendrerit. Maecenas lacinia mollis lectus, non
-        facilisis sem accumsan in. Donec sit amet neque eleifend, porta leo
-        porttitor, egestas ante. Sed tristique, magna sed pellentesque
-        scelerisque, justo orci volutpat dolor, et sodales sapien velit sit amet
-        lorem.
+        I am a results driven and problem solving programmer looking to start my
+        career in software development. During a successful career in content
+        delivery and management, I discovered my passion for programming when
+        using Python to create a script that automated a previously
+        time-intensive task for my team. The process of learning how to code and
+        executing the script I found to be hugely rewarding and satisfying.
         <br />
         <br />
-        semper pellentesque. Vestibulum ac quam leo. Ut lacinia lorem at sapien
-        faucibus, a tempor ex hendrerit. Maecenas lacinia mollis lectus, non
-        facilisis 
-        lorem.
+        Something clicked.
         <br />
         <br />
-       sodales auctor. Praesent id massa at purus
-        semper pellentesque. Vestibulum ac quam leo. Ut lacinia lorem at sapien
-        faucibus, a tempor ex hendrerit. Maecenas lacinia mollis lectus, non
-        facilisis sem accumsan in. Donec sit amet neque eleifend, porta leo
-        porttitor, egestas ante. Sed tristique, magna sed pellentesque
-        scelerisque, justo orci volutpat dolor, et sodales sapien velit sit amet
-        lorem.
+        From this point on I realised programming was something that I wanted to
+        pursue. For over a year I have been developing my technical abilities
+        and knowledge at every opportunity outside of my working hours.
         <br />
         <br />
-        semper pellentesque. Vestibulum ac quam leo. Ut lacinia lorem at sapien
-        faucibus, a tempor ex hendrerit. Maecenas lacinia mollis lectus, non
-        facilisis 
-        lorem.
-        
+        It has been an extremely enjoyable process; I relish the tough
+        challenges caused by a problem, followed by the high that comes from
+        solving them and the fact that there will always be something new to
+        learn.
+        <br />
+        <br />
+        Please get in touch if you have any questions or if you’d like to
+        collaborate.
       </SectionText>
     </Container>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Toggle from "./Toggler";
 import styled from "styled-components";
 import { slide as MobMenu } from "react-burger-menu";

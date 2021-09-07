@@ -62,6 +62,8 @@ const ProjectName = styled.h3`
 
 const ProjectDescription = styled.p`
     text-align: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
 `
 
 const ButtonContainer = styled.div`
@@ -102,7 +104,7 @@ const Projects = () => {
       <Project key={index}>
         <Img src={project.image} alt={"Screenshot of " + project.name + " project"}></Img>
         <ProjectName>{project.name}</ProjectName>
-        <ProjectDescription>This is my project description that needs to be defined</ProjectDescription>
+        <ProjectDescription>{project.description}</ProjectDescription>
         <ButtonContainer>
             <ProjectLink href={project.live} rel="noreferrer" target="_blank">Live Demo</ProjectLink>
             <ProjectLink href={project.repo} rel="noreferrer" target="_blank">Github Repo</ProjectLink>
