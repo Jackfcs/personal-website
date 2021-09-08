@@ -3,12 +3,17 @@ import styled from "styled-components";
 
 const Container = styled.div`
     position: relative;
-    max-width: 100%;
+    max-width: 100%x;
     margin-top: 14vw;
     margin-bottom: 7.8vw;
     scroll-margin-top: 14vw;
     padding-left: 5.7vw;
     padding-right: 5.7vw;
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
 const Name = styled.h1`

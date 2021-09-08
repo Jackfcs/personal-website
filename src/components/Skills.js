@@ -10,6 +10,9 @@ const SkillsComponent = styled.div`
   padding: 5.7vw;
 
   background: ${({ theme }) => theme.secondaryBG};
+
+ 
+
 `;
 
 export const SectionTitle = styled.h2`
@@ -50,6 +53,8 @@ const SkillsContainer = styled.div`
     grid-row-gap: 10vw;
     height: auto;
     }
+
+    
 `;
 
 const AreaTitle = styled.p`
@@ -64,6 +69,9 @@ const ImageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 `;
 
 const Image = styled.img`
@@ -96,6 +104,7 @@ const Image = styled.img`
         transform: scale(1);
         
       }
+
   }
     
   `;
@@ -117,6 +126,8 @@ const Name = styled.p`
         position: static;
         text-align: center;
     }
+
+    
 `;
 
 export const Skills = () => {

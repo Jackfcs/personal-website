@@ -11,6 +11,12 @@ const Container = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
   }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -40,11 +46,12 @@ const About = () => {
     <Container id="about">
       <SectionTitle>About me</SectionTitle>
       <SectionText>
-        I am a results driven and problem solving programmer looking to start my
+        I am a results driven and problem solving programmer looking to advance my
         career in software development. During a successful career in content
         delivery and management, I discovered my passion for programming when
         using Python to create a script that automated a previously
-        time-intensive task for my team. I found the process of learning to code and execute the script to be both hugely rewarding and satisfying.
+        time-intensive task for my team. I found the process of learning to code
+        and then writing and executing the script to be both hugely rewarding and satisfying.
         <br />
         <br />
         Something clicked.
@@ -52,7 +59,10 @@ const About = () => {
         <br />
         From this point on I realised programming was something that I wanted to
         pursue. For over a year I have been developing my technical abilities
-        and knowledge at every opportunity outside of my working hours. I have been meticulously following an online curriculum called The Odin Project, which provides both the resources and community in order to become a highly skilled developer.
+        and knowledge at every opportunity outside of my working hours. I have
+        been meticulously following an online curriculum called The Odin
+        Project, which provides both the resources and community in order to
+        become a highly skilled developer.
         <br />
         <br />
         It has been an extremely enjoyable process; I relish the tough
