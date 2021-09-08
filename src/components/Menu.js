@@ -92,6 +92,7 @@ const StyledBurgerMenu = styled.div`
     height: 6vw;
     left: 83vw;
     top: 2.5vw;
+    z-index: 20;
   }
 
   /* Color/shape of burger icon bars */
@@ -108,8 +109,6 @@ const StyledBurgerMenu = styled.div`
 
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 15vw;
-    width: 15vw;
     transform: scale(2);
     
   }
