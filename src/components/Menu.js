@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Toggle from "./Toggler";
 import styled from "styled-components";
-import { slide as MobMenu } from "react-burger-menu";
+import { stack as MobMenu } from "react-burger-menu";
 
 const Container = styled.div`
   width: 100vw;

@@ -14,12 +14,16 @@ const Container = styled.div`
 const Name = styled.h1`
     text-align: left;
     line-height: 1;
-    color: ${({ theme }) => theme.text}
+    color: ${({ theme }) => theme.text};
 `
 
 const Title = styled.h3`
     margin-top: 2vw;
-    color: ${({ theme }) => theme.secondaryBG}
+    color: ${({ theme }) => theme.secondaryBG};
+
+    @media (max-width: 480px) {
+        margin-top: 5vw;
+    }
 `
 
 const Main = () => {

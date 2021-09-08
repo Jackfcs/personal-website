@@ -1,9 +1,9 @@
 export const lightTheme = {
-    body: '#c1d6f2',
-    secondaryBG: '#4a6891',
+    body: '#fff5e8',
+    secondaryBG: '#4ac2ed',
     text: '#1a1a1a',
     buttonHoverColor: '#a5c8c6',
-    toggleBorder: '#4a6891',
+    toggleBorder: '#4ac2ed',
     gradient: 'linear-gradient(#39598A, #79D7ED)',
   }
   

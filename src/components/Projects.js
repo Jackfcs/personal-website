@@ -24,6 +24,7 @@ const Project = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 35vw;
     height: auto;
     background-color: ${({ theme }) => theme.secondaryBG};
@@ -53,7 +54,7 @@ const ProjectName = styled.h3`
     margin-top: 1vw;
     margin-bottom: 1vw;
     font-size: 3vw;
-    font-family: 'Volkhov', serif;
+    font-family: InterBold;
 
     @media (max-width: 480px) {
         font-size: 5vw;
