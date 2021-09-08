@@ -24,7 +24,7 @@ const Project = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 35vw;
     height: auto;
     background-color: ${({ theme }) => theme.secondaryBG};
