@@ -85,6 +85,7 @@ const NewToggle = styled(Toggle)`
 `;
 
 const StyledBurgerMenu = styled.div`
+
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
@@ -152,6 +153,8 @@ const StyledBurgerMenu = styled.div`
   .bm-overlay {
     background: ${({ theme }) => theme.body};
   }
+
+
 `;
 
 
@@ -209,6 +212,7 @@ const Menu = (props) => {
           </ULContainer>
         </Container>
       ) : (
+          <div>
         <Container>
           <ULContainer>
             <Ul>
@@ -219,6 +223,7 @@ const Menu = (props) => {
               ></NewToggle>
             </Ul>
           </ULContainer>
+          </Container>
           <StyledBurgerMenu>
             <MobMenu right width={"100%"}  isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
                 <A onClick={closeSideBar} href="#home">Home</A>
@@ -228,7 +233,8 @@ const Menu = (props) => {
                 <A onClick={closeSideBar} href="#contact">Contact</A>
             </MobMenu>
           </StyledBurgerMenu>
-        </Container>
+        
+        </div>
       )}
     </div>
   );
