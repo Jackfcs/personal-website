@@ -90,6 +90,7 @@ const Image = styled.img`
   bottom: 0;
   transition: transform 0.2s;
   padding: 0.5vw;
+  object-fit: contain;
 
   ${ImageContainer}: hover & {
     transform: scale(1.2) translateY(-0.9vw)

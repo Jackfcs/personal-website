@@ -18,12 +18,15 @@ import website from "../icons/screenshots/website.png";
 import todo from "../icons/screenshots/todo.png";
 import calculator from "../icons/screenshots/calculator.png";
 import library from "../icons/screenshots/library.png";
+import typescript from "../icons/frontend/typescript.png";
+import firebase from "../icons/other/firebase.png";
 
 export const frontEnd = [
   { image: javascript, name: "JavaScript" },
   { image: html5, name: "HTML5" },
   { image: css3, name: "CSS3" },
   { image: react, name: "React.js" },
+  { image: typescript, name: "TypeScript"},
   { image: bootstrap, name: "Bootstrap" },
   { image: sass, name: "Sass" },
   { image: styled, name: "Styled Components" },
@@ -35,6 +38,7 @@ export const misc = [
   { image: npm, name: "npm" },
   { image: webpack, name: "Webpack" },
   { image: jest, name: "Jest" },
+  { image: firebase, name: "Firebase" },
 ];
 
 export const projectInfo = [
@@ -70,7 +74,7 @@ export const projectInfo = [
     name: "Personal Website",
     image: website,
     repo: "https://github.com/Jackfcs/personal-website",
-    live: "https://google.com",
+    live: "https://jackcampbellsmith.com",
     description: "My personal portfolio using React with Styled Components"
   },
   {
