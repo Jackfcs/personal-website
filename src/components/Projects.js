@@ -100,8 +100,7 @@ const ProjectLink = styled.a`
 `
 
 const Projects = () => {
-  const allProjects = projectInfo.map((project, index) => {
-    return (
+  const allProjects = projectInfo.map((project, index) => 
       <Project key={index}>
         <Img src={project.image} alt={"Screenshot of " + project.name + " project"}></Img>
         <ProjectName>{project.name}</ProjectName>
@@ -112,7 +111,6 @@ const Projects = () => {
         </ButtonContainer>
       </Project>
     );
-  });
 
   return (
     <ProjectsComponent id="projects">

@@ -29,9 +29,10 @@ function App() {
         <Menu theme={theme} toggleTheme={toggleTheme} />
 
         <Main />
-        <About />
-        <Skills />
         <Projects />
+        
+        <Skills />
+        <About />
         <Contact />
       </div>
     </ThemeProvider>

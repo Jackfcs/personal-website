@@ -15,9 +15,7 @@ import shoppingCart from "../icons/screenshots/shopping-cart.png";
 import cv from "../icons/screenshots/cv.png";
 import weather from "../icons/screenshots/weather.png";
 import website from "../icons/screenshots/website.png";
-import todo from "../icons/screenshots/todo.png";
-import calculator from "../icons/screenshots/calculator.png";
-import library from "../icons/screenshots/library.png";
+import clonedit from "../icons/screenshots/clonedit.png";
 import typescript from "../icons/frontend/typescript.png";
 import firebase from "../icons/other/firebase.png";
 
@@ -42,12 +40,13 @@ export const misc = [
 ];
 
 export const projectInfo = [
+
   {
-    name: "Battleship",
-    image: battleship,
-    repo: "https://github.com/Jackfcs/battleship",
-    live: "https://jackfcs.github.io/battleship/",
-    description: "Battleship game using factory functions"
+    name: "Clonedit",
+    image: clonedit,
+    repo: "https://github.com/Jackfcs/clonedit",
+    live: "https://clonedit-production.web.app/",
+    description: "Clone of Reddit. Using React, TypeScript and Firebase"
   },
   {
     name: "Shopping Cart",
@@ -55,6 +54,13 @@ export const projectInfo = [
     repo: "https://github.com/Jackfcs/shopping-cart",
     live: "https://jackfcs.github.io/shopping-cart/",
     description: "React shopping cart using React Router"
+  },
+  {
+    name: "Battleship",
+    image: battleship,
+    repo: "https://github.com/Jackfcs/battleship",
+    live: "https://jackfcs.github.io/battleship/",
+    description: "Battleship game using factory functions"
   },
   {
     name: "CV Generator",
@@ -76,26 +82,5 @@ export const projectInfo = [
     repo: "https://github.com/Jackfcs/personal-website",
     live: "https://jackcampbellsmith.com",
     description: "My personal portfolio using React with Styled Components"
-  },
-  {
-    name: "Todo App",
-    image: todo,
-    repo: "https://github.com/Jackfcs/to-do-library",
-    live: "https://jackfcs.github.io/to-do-library/",
-    description: "Todo list using modules in vanilla JavaScript"
-  },
-  {
-    name: "Calculator",
-    image: calculator,
-    repo: "https://github.com/Jackfcs/calculator",
-    live: "https://jackfcs.github.io/calculator/",
-    description: "Calculator using vanilla JavaScript"
-  },
-  {
-    name: "Book Library",
-    image: library,
-    repo: "https://github.com/Jackfcs/book_library",
-    live: "https://jackfcs.github.io/book_library/",
-    description: "Book library using vanilla JavaScript"
   },
 ];
