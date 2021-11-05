@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.dc93a295.chunk.css",
-    "main.js": "/static/js/main.3cc900d5.chunk.js",
-    "main.js.map": "/static/js/main.3cc900d5.chunk.js.map",
+    "main.js": "/static/js/main.a887a656.chunk.js",
+    "main.js.map": "/static/js/main.a887a656.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.59a74aab.js",
     "runtime-main.js.map": "/static/js/runtime-main.59a74aab.js.map",
     "static/js/2.dafadb57.chunk.js": "/static/js/2.dafadb57.chunk.js",
@@ -15,13 +15,13 @@
     "static/media/index.scss": "/static/media/Inter-Regular.9cd7588f.ttf",
     "static/media/battleship.ad7bdb7b.png": "/static/media/battleship.ad7bdb7b.png",
     "static/media/bootstrap.74639664.png": "/static/media/bootstrap.74639664.png",
+    "static/media/clonedit.bb82cd48.png": "/static/media/clonedit.bb82cd48.png",
     "static/media/cv.a568f34a.png": "/static/media/cv.a568f34a.png",
     "static/media/firebase.6ea3b0b3.png": "/static/media/firebase.6ea3b0b3.png",
     "static/media/git.299bbdff.png": "/static/media/git.299bbdff.png",
     "static/media/jackcampbellsmithCV.26c7262d.pdf": "/static/media/jackcampbellsmithCV.26c7262d.pdf",
     "static/media/javascript.621f6061.png": "/static/media/javascript.621f6061.png",
     "static/media/jest.809768de.png": "/static/media/jest.809768de.png",
-    "static/media/library.9178e957.png": "/static/media/library.9178e957.png",
     "static/media/react.6ab7e2e9.png": "/static/media/react.6ab7e2e9.png",
     "static/media/sass.3fc39440.png": "/static/media/sass.3fc39440.png",
     "static/media/shopping-cart.a2933482.png": "/static/media/shopping-cart.a2933482.png",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.59a74aab.js",
     "static/js/2.dafadb57.chunk.js",
     "static/css/main.dc93a295.chunk.css",
-    "static/js/main.3cc900d5.chunk.js"
+    "static/js/main.a887a656.chunk.js"
   ]
 }
