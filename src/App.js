@@ -11,9 +11,6 @@ import { Skills } from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
-//Things to return to
-// responsive, add mobile detect
-
 function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
@@ -27,12 +24,12 @@ function App() {
       <div className="App">
         <GlobalStyles />
         <Menu theme={theme} toggleTheme={toggleTheme} />
-
         <Main />
-        <Projects />
-        
-        <Skills />
         <About />
+        <Projects />
+
+        <Skills />
+
         <Contact />
       </div>
     </ThemeProvider>
